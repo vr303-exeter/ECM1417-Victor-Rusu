@@ -1,0 +1,29 @@
+Features:
+
+Index.php:
+- register hyperlink has had its underline removed. You can just click on the register text and it will redirect to registration.php.
+- button has animation added. Purple box hides behind button when you hover over it. All buttons are similar to this.
+
+
+Registration.php:
+(Complex implementation)
+- username input box goes grey when hovered over.
+- username input box cannot be left empty. If you try to register without a username you will receive a pop up asking you to enter a username.
+- avatar creator allows the user to cycle through the various head, eyes and mouth options. They can then submit this and it will be displayed in the navbar.
+- if user tries to not select an avatar they can proceed but will be given a default avatar which is the same as the background image in the main div.
+- avatar selection div has a grey gradient with a box shadow.
+
+Pairs.php:
+(Simple implemenation)
+- start game button begins the game.
+- on click of the start game button, a grey div will appear and the start game button will disappear.
+- 6 cards avaiable, 3 pairs of emoji cards that are shuffled each attempt to play.
+- once a card is flipped it will stay flipped until another card is flipped. If they match, both cards remain flipped.
+- game is won once all cards are flipped. No time limit.
+- once game is won, a pop up appears showing attempts taken, time taken, and score which is calculated by the attempts and time taken.
+- the user can then either play again for a better score or submit their score to the leaderboard.
+
+Leaderboard.php:
+- displays the top scores for the current machine. Multiple users on the same machine can upload their scores through different browser sessions.
+- stored through a json file however it seems to not be working with the azure virtual machine? it would work on my own personal computer so im not sure why it isnt working on the virtual machine.
+- 2 columns in the leaderboard, user and score showing the data for each cell.
